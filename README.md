@@ -22,7 +22,7 @@ A small script to export a user's starred GitHub repositories into a Markdown fi
 1. **Clone the repository**
    ```powershell
    git clone https://github.com/THEgrison/GithubStars-exporter.git
-   cd export-github-stars
+   cd GithubStars-exporter
    ```
 
 2. **Install dependencies**
