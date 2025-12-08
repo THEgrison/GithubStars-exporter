@@ -45,27 +45,27 @@ A small script to export a user's starred GitHub repositories into a Markdown fi
 $env:GITHUB_TOKEN = "ghp_YOUR_TOKEN_HERE"
 
 # Run the script
-python "import requests.py" --username YOUR_GITHUB_USERNAME
+python "export_starred.py" --username YOUR_GITHUB_USERNAME
 ```
 
 ### Option 2: Pass Token Directly
 
 ```powershell
-python "import requests.py" --username YOUR_GITHUB_USERNAME --token ghp_YOUR_TOKEN_HERE --output mystars.md
+python "export_starred.py" --username YOUR_GITHUB_USERNAME --token ghp_YOUR_TOKEN_HERE --output mystars.md
 ```
 
 ## Examples
 
 ```powershell
 # Export with default output file (starred_repos.md)
-python "import requests.py" --username octocat
+python "export_starred.py" --username octocat
 
 # Export to custom file
-python "import requests.py" --username octocat --output my_stars.md
+python "export_starred.py" --username octocat --output my_stars.md
 
 # Using environment variable for security
 $env:GITHUB_TOKEN = "ghp_abc123..."
-python "import requests.py" --username octocat
+python "export_starred.py" --username octocat
 ```
 
 ## Notes
